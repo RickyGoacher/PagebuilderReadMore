@@ -1,0 +1,29 @@
+[data-content-type="pagebuilderextend_pagebuilderreadmore"] [data-element="readmore_element"] {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+[data-content-type="pagebuilderextend_pagebuilderreadmore"] [data-element="readmore_element"] * {
+    display: inline;
+}
+
+[data-content-type="pagebuilderextend_pagebuilderreadmore"].active [data-element="readmore_element"] {
+    -webkit-line-clamp: unset !important;
+}
+
+[data-content-type="pagebuilderextend_pagebuilderreadmore"].active [data-element="readmore_element"] * {
+    display: inline-block;
+}
+
+[data-content-type="pagebuilderextend_pagebuilderreadmore"].not-enabled::after {
+    content: "Read More";
+}
+
+[data-content-type="pagebuilderextend_pagebuilderreadmore"] .readmore-wrapper {
+    cursor: pointer;
+}
+
+[data-content-type="pagebuilderextend_pagebuilderreadmore"] .pagebuilder-readmore-actions {
+    text-align: right;
+}

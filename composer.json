@@ -1,0 +1,33 @@
+{
+    "name": "pagebuilderextend/pagebuilder-readmore",
+    "version": "0.0.1",
+    "authors": [
+        {
+            "name": "Ricky Goacher",
+            "email": "rickygoacher@gmail.com"
+        }
+    ],
+    "description": "Page Builder content type for PageBuilderReadMore.",
+    "require": {
+        "magento/framework": "*",
+        "magento/module-page-builder": "*",
+        "php": "~7.3.0||~7.4.0||~8.1.0"
+    },
+    "type": "magento2-module",
+    "license": [
+        "proprietary"
+    ],
+    "autoload": {
+        "psr-4": {
+            "PagebuilderExtend\\PageBuilderReadMore\\": ""
+        },
+        "files": [
+            "registration.php"
+        ]
+    },
+    "config": {
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "secure-http": false
+    }
+}
